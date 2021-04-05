@@ -1,0 +1,52 @@
+package weekhomework;
+
+public class Employee {
+	private int num;
+	private String name;
+	private float rateOfAttend;
+	private int basicSal;
+	private int prize;
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public float getRateOfAttend() {
+		return rateOfAttend;
+	}
+	public void setRateOfAttend(float rateOfAttend) {
+		this.rateOfAttend = rateOfAttend;
+	}
+	public int getBasicSal() {
+		return basicSal;
+	}
+	public void setBasicSal(int basicSal) {
+		this.basicSal = basicSal;
+	}
+	public int getPrize() {
+		return prize;
+	}
+	public void setPrize(int prize) {
+		this.prize = prize;
+	}
+	
+	
+	public void outputInfo() {
+		System.out.println("Employee [num=" + num + ", name=" + name + ", rateOfAttend=" + rateOfAttend + ", basicSal=" + basicSal
+				+ ", prize=" + prize + "]"); 
+	}
+	
+	public void outputWage(){
+		System.out.println("实发工资:"+(basicSal+prize));
+	}
+	
+	
+
+}

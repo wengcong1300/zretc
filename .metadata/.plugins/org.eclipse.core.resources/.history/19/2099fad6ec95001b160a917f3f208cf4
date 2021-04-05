@@ -1,0 +1,27 @@
+package weekhomework;
+
+public class Manager {
+	private float totalDeductRate;
+	private float totalAmount;
+	public float getTotalDeductRate() {
+		return totalDeductRate;
+	}
+	public void setTotalDeductRate(float totalDeductRate) {
+		this.totalDeductRate = totalDeductRate;
+	}
+	public float getTotalAmount() {
+		return totalAmount;
+	}
+	public void setTotalAmount(float totalAmount) {
+		this.totalAmount = totalAmount;
+	}
+	public Manager(float totalDeductRate, float totalAmount) {
+		super();
+		this.totalDeductRate = totalDeductRate;
+		this.totalAmount = totalAmount;
+	}
+	public Manager() {
+		super();
+	}
+
+}

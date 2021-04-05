@@ -1,0 +1,19 @@
+package weekhomework;
+
+public class Saleman extends Employee{
+	private float deductRate;
+	private float personAmount;
+	public float getDeductRate() {
+		return deductRate;
+	}
+	public void setDeductRate(float deductRate) {
+		this.deductRate = deductRate;
+	}
+	public float getPersonAmount() {
+		return personAmount;
+	}
+	public void setPersonAmount(float personAmount) {
+		this.personAmount = personAmount;
+	}
+	
+}

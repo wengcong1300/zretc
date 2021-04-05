@@ -1,0 +1,30 @@
+package weekhomework;
+
+public class Saleman extends Employee{
+	private float deductRate;
+	private float personAmount;
+	public float getDeductRate() {
+		return deductRate;
+	}
+	public void setDeductRate(float deductRate) {
+		this.deductRate = deductRate;
+	}
+	public float getPersonAmount() {
+		return personAmount;
+	}
+	public void setPersonAmount(float personAmount) {
+		this.personAmount = personAmount;
+	}
+	public Saleman(int num, String name, float rateOfAttend, float basicSal, float prize, float deductRate,
+			float personAmount) {
+		super(num, name, rateOfAttend, basicSal, prize);
+		this.deductRate = deductRate;
+		this.personAmount = personAmount;
+	}
+	public Saleman(int num, String name, float rateOfAttend, float basicSal, float prize) {
+		super(num, name, rateOfAttend, basicSal, prize);
+	}
+	public void outputWage(){
+		System.out.println("销售员实发工资:"+(super.getBasicSal()+super.getPrize()*super.getRateOfAttend()+personAmount*deductRate));
+	}
+}
